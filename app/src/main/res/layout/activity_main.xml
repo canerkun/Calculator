@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvGoster"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="0"
+
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:layout_margin="20dp"
+        android:textStyle="bold"/>
+
+    <GridLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <!--1.satir-->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="1"></Button>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="2"></Button>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="3"></Button>
+        <!--2.satir-->
+        <Button
+            android:id="@+id/btn4"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="4"></Button>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="5"></Button>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="6"></Button>
+        <!--3.satir-->
+        <Button
+            android:id="@+id/btn7"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="7"></Button>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="8"></Button>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="9"></Button>
+        <!--4.satir-->
+        <Button
+            android:id="@+id/btn0"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:onClick="btntiklaninca"
+            android:text="0"
+
+            ></Button>
+        <!--İşlem Butonları-->
+        <Button
+            android:id="@+id/btnEsit"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:backgroundTint="@color/btnislemrenk"
+            android:onClick="btnEsittir"
+            android:text="="></Button>
+
+        <Button
+            android:id="@+id/btnTopla"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:backgroundTint="@color/btnislemrenk"
+            android:onClick="islem"
+            android:text="+"></Button>
+
+        <Button
+            android:id="@+id/btnCikar"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:backgroundTint="@color/btnislemrenk"
+            android:onClick="islem"
+            android:text="-"
+
+            ></Button>
+
+        <Button
+            android:id="@+id/btnCarp"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:backgroundTint="@color/btnislemrenk"
+            android:onClick="islem"
+            android:text="x"></Button>
+
+        <Button
+            android:id="@+id/btnBol"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:backgroundTint="@color/btnislemrenk"
+            android:onClick="islem"
+            android:text="/"></Button>
+
+        <Button
+            android:id="@+id/btnSıfırla"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:backgroundTint="@color/silrenk"
+            android:onClick="islem"
+            android:text="C"
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/btnÖnceki_Sıfırla"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:backgroundTint="@color/silrenk"
+            android:onClick="öncekini_sil"
+            android:text="CE"
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/btn_sayisil"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_margin="5dp"
+            android:width="75dp"
+            android:height="75dp"
+            android:backgroundTint="@color/silrenk"
+            android:onClick="btn_sayisil"
+            android:text="Sil"
+            android:textSize="20sp"></Button>
+
+    </GridLayout>
+
+
+
+
+
+
+</LinearLayout>
